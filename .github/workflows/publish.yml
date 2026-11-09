@@ -1,0 +1,56 @@
+# Rebuilds and publishes the website every time something changes on the main branch.
+# If a project has a problem, the build stops, the old site stays online,
+# and GitHub emails you a list of what to fix.
+
+name: Publish site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install photo tools
+        run: pip install "pillow>=11" "pillow-heif>=1.0"
+
+      - name: Reuse photos converted last time
+        uses: actions/cache@v6
+        with:
+          path: .cache
+          key: photos-${{ github.run_id }}
+          restore-keys: photos-
+
+      - name: Check projects and build the site
+        run: python site-engine/build.py
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
