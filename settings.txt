@@ -1,0 +1,16 @@
+# Site settings
+# Change the text after each colon, then click "Commit changes".
+# Lines starting with # are notes and are ignored.
+
+name: Catalina Ospina León
+subtitle: Student work · Art, Design & Computing
+
+# What appears above each year's title
+year 7: 6è Primària
+year 8: 1r ESO
+year 9: 2n ESO
+
+# Colours, as hex codes (find codes at https://htmlcolorcodes.com)
+accent colour: #FF5A36
+background colour: #111111
+text colour: #F5F3EE
