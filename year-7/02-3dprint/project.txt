@@ -1,6 +1,6 @@
 title: L'artesà digital
-keyword: 3D PRINT
+keyword: 3DPRINT
 skills: 3D modeling, 3D printing, orthogonal projection
 school year: 2025-26
 
-Write the paragraph about the project here: As part of our Middle Ages unit of inquiry, students stepped back in time to become medieval artisans! While exploring how medieval society worked, from knights and monks to blacksmiths, merchants and minstrels, each student chose a trade and designed a symbol to represent it. Using Tinkercad, they turned their sketches into 3D models and brought them to life with a 3D printer, blending history with hands-on technology.
+As part of our Middle Ages unit of inquiry, students stepped back in time to become medieval artisans! While exploring how medieval society worked, from knights and monks to blacksmiths, merchants and minstrels, each student chose a trade and designed a symbol to represent it. Using Tinkercad, they turned their sketches into 3D models and brought them to life with a 3D printer, blending history with hands-on technology.
