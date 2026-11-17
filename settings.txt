@@ -3,7 +3,11 @@
 # Lines starting with # are notes and are ignored.
 
 name: Catalina Ospina León
-subtitle: Student work · Art, Design & Computing
+site address: https://catalina-artdesign-teach.github.io
+
+# Home page title: each word of "home title" goes on its own line
+home title: Student Work
+subjects: Art · Design · Computing
 
 # What appears above each year's title
 year 7: 6è Primària
@@ -11,6 +15,12 @@ year 8: 1r ESO
 year 9: 2n ESO
 
 # Colours, as hex codes (find codes at https://htmlcolorcodes.com)
-accent colour: #FF5A36
+year 7 colour: #FF5A36
+year 8 colour: #FF7D34
+year 9 colour: #FFB536
+main colour: #FF5A36
 background colour: #111111
 text colour: #F5F3EE
+
+# Contact form: your Web3Forms access key
+contact form key: 34edeb1b-40d3-4d61-9aeb-14d92edd8b14
